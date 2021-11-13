@@ -1,0 +1,35 @@
+{
+  "name": "engine-model",
+  "version": "0.0.0",
+  "author": "Oleh Bilous @boa070270",
+  "bugs": "https://github.com/boa070270/engine-model/issues",
+  "homepage": "https://github.com/boa070270/engine-model",
+  "license": "MIT",
+  "repository": "boa070270/engine-model",
+  "type": "module",
+  "scripts": {
+    "prepack": "rm -rf lib && tsc -b && oclif-dev readme",
+    "test": "nyc --extension .ts mocha --require ts-node/register --forbid-only \"test/**/*.test.ts\"",
+    "version": "oclif-dev readme && git add README.md"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "rxjs": "^7.4.0",
+    "tslib": "^2.3.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.16.0",
+    "@babel/core": "^7.16.0",
+    "@babel/node": "^7.16.0",
+    "@babel/preset-env": "^7.16.0",
+    "@types/chai": "^4.2.22",
+    "@types/lodash": "^4.14.175",
+    "@types/mocha": "^9.0.0",
+    "@types/node": "^16.10.3",
+    "chai": "^4.3.4",
+    "mocha": "^9.1.2",
+    "nyc": "^15.1.0",
+    "ts-node": "^8.10.2",
+    "typescript": "^4.4.3"
+  }
+}

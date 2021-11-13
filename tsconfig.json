@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist",
+    "composite": true,
+    "declaration": true,
+    "importHelpers": true,
+    "rootDir": "src",
+    "strict": true,
+    "target": "esnext",
+    "module": "commonjs",
+    "moduleResolution": "Node",
+    "esModuleInterop": true,
+    /* Type Checking */
+    "allowUnreachableCode": false,
+    "allowUnusedLabels": false,
+    "noImplicitReturns": true,
+    "baseUrl": "./",
+    "paths": {
+      "engine-model": ["./src/index"]
+    }
+  },
+  "include": [
+    "./src/**/*"
+  ]
+}
